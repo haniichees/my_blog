@@ -1,68 +1,26 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Тестовое задание 
+## Задача 
+### Реализовать блог.
+ Приложение должно быть построено как одностраничное (SPA). Для обмена данными между клиентом и сервером использовать JSON. Для получения данных можно использовать уже готовое решение: ​ https://jsonplaceholder.typicode.com​ или же использовать свой собственный сервер на NodeJS или dotnet. Если будет принято решение использовать свой сервер, то он полностью должен повторять API, предоставляемое сервисом “jsonplaceholder.typicode.com”. Сайт должен состоять из 3х страниц: 
+ 
+**Страница “Home”**. Главная страница, на которой отображаются все посты.
+URL: /
+Получение данных: 
+ 1. Посты: ​ https://jsonplaceholder.typicode.com/posts  
+ 
+**Страница “Post”**. ​ ​ Страница для просмотра отдельного поста, комментариев к посту и информации об авторе этого поста. URL: /posts/:postId 
+Получение данных: 
+ 1. Один пост: ​ https://jsonplaceholder.typicode.com/posts/postId 
+ 2. Комментарии к посту: ​ https://jsonplaceholder.typicode.com/posts/postId/comments 
+ 3. Автор поста: ​ https://jsonplaceholder.typicode.com/users/userId
+ postId это id поста берется из url userId берется из поста 
+ 
+**Страница “About”**. ​ ​ Страница, содержащая информацию о блоге. 
+URL: /about 
+Получение данных не требуется, так как контент полностью статичный. 
 
-## Available Scripts
+## Дизайн 
+Приложение должно полностью соотвествовать дизайну представленному в этом документе: ​ https://bit.ly/2FO3cgi 
 
-In the project directory, you can run:
-
-### `yarn start`
-
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## Технологический стек
+ В своей работе мы используем следующие библиотеки: react, react-router, redux, react-redux, redux-persist, redux-thunk, axios, lodash. Также используется es6, es7. Использование нашего стека технологий будет являться большим плюсом. Но вы можете использовать свой стек, обосновав свой выбор.  Для сборки мы используем webpack, babel. При выполнении этого задания допускается использование готовых или zero-configuration решений (create-react-app, parceljs или другие). Для линтинга модифицированный eslint-конфиг от airbnb (​ https://bit.ly/2PfJWYN​ ). 
